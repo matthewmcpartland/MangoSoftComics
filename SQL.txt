@@ -1,0 +1,65 @@
+SQL (W3schools)
+
+-Structured Query Language
+RDBMS-Relational Database Management System (stored in tables)
+field-column in a table
+record-row in a table
+
+---SQL Commands--- (not case sensitive)
+SELECT - extracts data from a database			ex.SELECT CustomerName, City FROM Customers;
+UPDATE - updates data in a database
+DELETE - deletes data from a database
+INSERT INTO - inserts new data into a database
+CREATE DATABASE - creates a new database
+ALTER DATABASE - modifies a database
+CREATE TABLE - creates a new table
+ALTER TABLE - modifies a table
+DROP TABLE - deletes a table
+CREATE INDEX - creates an index (search key)
+DROP INDEX - deletes an index
+SELECT DISTINCT - returns distinct (different) values
+
+---WHERE Clause--- (can be used in SELECT, UPDATE, DELETE, etc.)
+=	Equal
+<>	Not equal. Note: In some versions of SQL this operator may be written as !=
+>	Greater than
+<	Less than
+>=	Greater than or equal
+<=	Less than or equal
+BETWEEN	Between an inclusive range
+LIKE	Search for a pattern (% zero one or multiple characters, _ single character)
+IN	To specify multiple possible values for a column (similar to multiple OR conditions)
+AND 	displays record if all conditions are TRUE
+OR	displays record if any of the conditions are TRUE
+NOT	displays record if conditions are NOT TRUE
+
+---ORDERED DISPLAY---
+ORDER BY (DESC) 
+
+---NULL Values---
+WHERE " " IS NULL
+	  IS NOT NULL
+
+---UPDATE---
+ex. UPDATE table_name
+    SET column1 = value1, column2 = value2, ...
+    WHERE condition; (If not included, all records will update)
+
+---DELETE---
+ex. DELETE FROM Customers
+    WHERE CustomerName='Alfreds Futterkiste';
+
+---SELECT FUNCTIONS---
+SELECT TOP-used to specify the number of records to return
+MIN()-returns the smallest value of the selected column.
+MAX()-returns the largest value of the selected column.
+COUNT()-returns the number of rows that matches a specified criteria.
+AVG()-returns the average value of a numeric column.
+SUM()-returns the total sum of a numeric column.
+
+
+
+
+
+
+
